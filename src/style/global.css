@@ -1,0 +1,15 @@
+body {
+    font-family: Sen;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: Sen-Bold;
+}
+
+@font-face {
+    font-family: "Sen";
+    src: url("../assets/fonts/Sen/Sen-Regular.ttf");
+}
+@font-face {
+    font-family: "Sen-Bold";
+    src: url("../assets/fonts/Sen/Sen-Bold.ttf");
+}
