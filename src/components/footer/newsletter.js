@@ -10,7 +10,7 @@ function Newsletter() {
       <br />
       <br />
       <br />
-      <h1 style={{ fontSize: "53px", margin: "0px" }}>Newsletter</h1>
+      <h1 style={{ fontSize: "53px", color: "white", margin: "0px" }}>Newsletter</h1>
       <Form>
         <Input
           placeholder="MAIL ADDRESS"
@@ -26,6 +26,7 @@ function Newsletter() {
             fontFamily: "Sen",
             textAlign: "center",
             height: "15px",
+            width: "300px",
             textTransform: "uppercase",
             letterSpacing: "2px",
           }}

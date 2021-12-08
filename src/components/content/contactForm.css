@@ -1,0 +1,30 @@
+.contactForm {
+  background-color: #f1f1f1;
+}
+@media screen and (max-width: 576px) {
+  .ContactImageDesktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) {
+  .contactForm-col1 {
+    min-width: 500px;
+  }
+  .contactForm-col2 {
+    min-width: 500px;
+  }
+  .ContactImageMobile {
+    display: none;
+  }
+}
+.contactForm .ant-form-item-label > label {
+  color: #c5c5c5 !important;
+}
+.contactForm button {
+  background-color: #1c1c1c !important;
+  border-color: #1c1c1c !important;
+}
+.contactForm button:hover {
+  background-color: rgb(54, 54, 54) !important;
+  border-color: rgb(54, 54, 54) !important;
+}
