@@ -4,23 +4,23 @@ import "./footerMenu.css";
 function FooterMenu() {
   return (
     <div className="footerMenu">
-      <ul style={{ listStyleType: "none" }}>
+      <ul className="nopadding" style={{ listStyleType: "none" }}>
         <li>
           <a href="#">LOREM</a>
         </li>
-        •
+        <span className="pointsymbol">•</span>
         <li>
           <a href="#">LOREM</a>
         </li>
-        •
+        <span className="pointsymbol">•</span>
         <li>
           <a href="#">LOREM</a>
         </li>
-        •
+        <span className="pointsymbol">•</span>
         <li>
           <a href="#">LOREM</a>
         </li>
-        •
+        <span className="pointsymbol">•</span>
         <li>
           <a href="#">LOREM</a>
         </li>
