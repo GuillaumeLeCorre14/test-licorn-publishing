@@ -36,7 +36,7 @@ function ColumnLeft() {
             </Col>
           </Row>
           {/* Slider/background => 1 colonne */}
-          <Row style={{ backgroundColor: "#162d8c", paddingBottom: "18%", paddingTop: "18%" }}>
+          <Row style={{ backgroundColor: "#162d8c", paddingBottom: "12%", paddingTop: "12%" }}>
             <Col offset={0} span={24}>
               <div className="SliderLeft">
                 <h1 style={{ color: "white", fontSize: "60px", lineHeight: "74px" }}>Loremp ipsum dolor sit amet</h1>
@@ -55,6 +55,14 @@ function ColumnLeft() {
                 >
                   <a href="/">Lorem ipsum</a>
                 </Button>
+                <Row>
+                  <Col lg={{ span: 3, offset: 0 }} sm={{ span: 0, offset: 0 }} xs={{ span: 0, offset: 0 }}>
+                    <u>Prev</u>
+                  </Col>
+                  <Col lg={{ span: 3, offset: 0 }} sm={{ span: 0, offset: 0 }} xs={{ span: 0, offset: 0 }}>
+                    Next
+                  </Col>
+                </Row>
               </div>
             </Col>
           </Row>
