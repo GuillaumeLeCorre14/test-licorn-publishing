@@ -20,9 +20,9 @@ function ContactForm() {
         <Col
           className="contactForm-col1"
           flex="0 1 100%"
-          xs={{ span: 10, offset: 2 }}
-          md={{ span: 8, offset: 4 }}
-          lg={{ span: 8, offset: 4 }}
+          xs={{ offset: 2, span: 10 }}
+          md={{ offset: 6, span: 12 }}
+          lg={{ offset: 4, span: 6 }}
           style={{ marginTop: "-5%" }}
         >
           <img className="ContactImageDesktop" src={ContactImage} alt="contactimage" style={{ width: "100%" }} />
@@ -31,9 +31,9 @@ function ContactForm() {
           className="contactForm-col2"
           flex="0 1 400px"
           xs={{ offset: 2, span: 20 }}
-          md={{ offset: 0, span: 8 }}
-          lg={{ offset: 0, span: 8 }}
-          style={{ padding: "1%", boxShadow: "0 0 65px 0 rgba(0,0,0,0.15)" }}
+          md={{ offset: 6, span: 12 }}
+          lg={{ offset: 0, span: 6 }}
+          style={{ backgroundColor: "white", padding: "1%", boxShadow: "0 0 65px 0 rgba(0,0,0,0.15)" }}
         >
           <h1 style={{ fontSize: "45px" }}>Lorem ipsum</h1>
           <div style={{ paddingLeft: "20%", paddingRight: "20%", textAlign: "center" }}>

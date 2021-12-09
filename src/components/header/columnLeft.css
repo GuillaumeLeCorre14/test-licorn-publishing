@@ -1,0 +1,15 @@
+.tab {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 30px;
+}
+.SliderLeft {
+  margin: 0px 10% 0px 10%;
+  padding: 0px 22% 0px 0%;
+}
+@media screen and (max-width: 576px) {
+  .SliderLeft {
+    margin: 0px 10% 0px 10%;
+    padding: 0px 0% 0% 0%;
+  }
+}

@@ -1,6 +1,12 @@
 body {
   font-family: Sen;
   background-color: white !important;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+html {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 p {
   font-family: Sen !important;
@@ -25,6 +31,8 @@ h6 {
   padding: 0px 0px !important;
 }
 .ant-layout-header {
-  background: #162d8c !important;
+  background: white !important;
   color: white !important;
+  padding: 0px !important;
+  height: auto !important;
 }

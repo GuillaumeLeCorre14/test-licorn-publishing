@@ -1,6 +1,6 @@
 import { Layout, Row, Col } from "antd";
-import NavBar from "./components/header/navbar";
-import Slider from "./components/header/slider";
+import ColumnLeft from "./components/header/columnLeft";
+import ColumnRight from "./components/header/columnRight";
 import Articles from "./components/content/articles/articles";
 import ContactForm from "./components/content/contactForm";
 import Newsletter from "./components/footer/newsletter";
@@ -14,8 +14,14 @@ function App() {
     <>
       <Layout>
         <Header>
-          <NavBar></NavBar>
-          <Slider></Slider>
+          <Row>
+            <Col xs={{ span: 24, offset: 0 }} lg={{ span: 12, offset: 0 }}>
+              <ColumnLeft />
+            </Col>
+            <Col xs={{ span: 0, offset: 0 }} lg={{ span: 12, offset: 0 }}>
+              <ColumnRight />
+            </Col>
+          </Row>
         </Header>
         <Content>
           <Row>

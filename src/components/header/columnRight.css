@@ -1,0 +1,11 @@
+.ColumnRight .PhotoHeader {
+  width: 130%;
+  left: -30%;
+  right: 0px;
+  position: relative;
+}
+.tab {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 30px;
+}

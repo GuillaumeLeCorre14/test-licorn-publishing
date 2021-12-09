@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../../assets/logo/logo-licorn.png";
-import { Form, Input, Row, Col, Space } from "antd";
+import logo from "../../assets/logo/logo-licorn.svg";
+import { Form, Input } from "antd";
 import { FacebookFilled, TwitterOutlined, InstagramOutlined } from "@ant-design/icons";
 
 function Newsletter() {
