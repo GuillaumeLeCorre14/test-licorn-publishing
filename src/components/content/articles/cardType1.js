@@ -16,29 +16,22 @@ const CardType1 = (props) => {
         style={{
           backgroundImage: `url(${props.image})`,
           backgroundSize: "cover",
-          // backgroundSize: "100%",
           backgroundRepeat: "no-repeat",
-          // width: "100%",
-          // minHeight: "300px",
-          // padding: "0px 0px 50px 0px",
         }}
       >
         <Col span={24}>
           <Row align="middle">
-            <Col style={{ backgroundColor: iconColorBackground, padding: "20px 10px 20px 10px" }} span={6}>
+            <Col style={{ backgroundColor: iconColorBackground, padding: "20px 10px 20px 10px" }} span={4}>
               <img src={iconSVG} alt="img" style={{ width: "50%" }} />
             </Col>
           </Row>
           <Row align="middle">
             <Col span={24}>
               {iconColorBackground === "#007eea" ? (
-                <img src={ArrowDownSVG} alt="img" />
+                <img style={{ marginTop: "30px" }} src={ArrowDownSVG} alt="img" />
               ) : (
-                <img src={ArrowDownSVG2} alt="img" />
+                <img style={{ marginTop: "30px" }} src={ArrowDownSVG2} alt="img" />
               )}
-              {/* <img src={ArrowDownSVG} alt="img" /> */}
-              <br />
-              <br />
               <div>
                 <h1 className="title-card1" style={{ fontSize: "20px", color: "white", textDecoration: "underline" }}>
                   {title}
