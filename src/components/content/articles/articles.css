@@ -1,0 +1,13 @@
+@media screen and (max-width: 576px) {
+  .articles .col2 {
+    top: 0px !important;
+  }
+  .articles .col3 {
+    top: 0px !important;
+  }
+}
+@media screen and (min-width: 576px) {
+  .space-mobile {
+    display: none;
+  }
+}

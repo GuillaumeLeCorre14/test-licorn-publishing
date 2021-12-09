@@ -56,7 +56,7 @@ function ContactForm() {
                   name="firstname"
                   rules={[{ required: false, message: "Please input your firstname!" }]}
                 >
-                  <Input />
+                  <Input placeholder="Jane" />
                 </Form.Item>
               </Col>
               <Col lg={{ span: 10 }} md={{ span: 12 }} xs={{ span: 12 }}>
@@ -65,7 +65,7 @@ function ContactForm() {
                   name="lastname"
                   rules={[{ required: false, message: "Please input your lastname!" }]}
                 >
-                  <Input />
+                  <Input placeholder="Smith" />
                 </Form.Item>
               </Col>
             </Row>
@@ -76,7 +76,7 @@ function ContactForm() {
                   name="mail"
                   rules={[{ required: false, message: "Please input your mail adress" }]}
                 >
-                  <Input />
+                  <Input placeholder="janesmith@example.com" />
                 </Form.Item>
               </Col>
             </Row>
@@ -88,7 +88,7 @@ function ContactForm() {
                   name="message"
                   rules={[{ required: false, message: "Please input your message" }]}
                 >
-                  <TextArea />
+                  <TextArea placeholder="Hey, ..." />
                 </Form.Item>
               </Col>
             </Row>
