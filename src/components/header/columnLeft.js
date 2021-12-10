@@ -63,17 +63,14 @@ function ColumnLeft() {
               <center>
                 <p style={{ fontSize: "15px", letterSpacing: "1.76", color: "#353535", fontWeight: "bold" }}>
                   FOLLOW US
-                  {/* <FacebookFilled style={{ margin: "5px 5px 5px 35px " }} />
-                  <TwitterOutlined style={{ margin: "5px" }} />
-                  <InstagramOutlined style={{ margin: "5px" }} /> */}
                   <a style={{ color: "black" }} href="https://www.facebook.com">
-                    <FacebookFilled style={{ margin: "5px 5px 5px 35px " }} />
+                    <FacebookFilled className="facebook" style={{ margin: "5px 5px 5px 35px " }} />
                   </a>
                   <a style={{ color: "black" }} href="https://www.twitter.com">
-                    <TwitterOutlined style={{ margin: "5px" }} />
+                    <TwitterOutlined className="twitter" style={{ margin: "5px" }} />
                   </a>
                   <a style={{ color: "black" }} href="https://www.instagram.com">
-                    <InstagramOutlined style={{ margin: "5px" }} />
+                    <InstagramOutlined className="instagram" style={{ margin: "5px" }} />
                   </a>
                 </p>
               </center>

@@ -31,20 +31,20 @@ function ContactForm() {
       <Row>
         <Col
           className="contactForm-col1"
-          flex="0 1 100%"
           xs={{ offset: 2, span: 10 }}
           md={{ offset: 6, span: 12 }}
           lg={{ offset: 4, span: 6 }}
+          xl={{ offset: 4, span: 8 }}
           style={{ marginTop: "-5%" }}
         >
           <img className="ContactImageDesktop" src={ContactImage} alt="contactimage" style={{ width: "100%" }} />
         </Col>
         <Col
           className="contactForm-col2"
-          flex="0 1 400px"
           xs={{ offset: 2, span: 20 }}
           md={{ offset: 6, span: 12 }}
           lg={{ offset: 0, span: 6 }}
+          xl={{ offset: 0, span: 8 }}
           style={{ backgroundColor: "white", padding: "1%", boxShadow: "0 0 65px 0 rgba(0,0,0,0.15)" }}
         >
           <h1 style={{ fontSize: "45px" }}>Lorem ipsum</h1>
@@ -53,8 +53,8 @@ function ContactForm() {
           </div>
           <Form
             name="basic"
-            labelCol={{ offset: 2, span: 20 }}
-            wrapperCol={{ offset: 2, span: 20 }}
+            // labelCol={{ offset: 2, span: 20 }}
+            // wrapperCol={{ offset: 2, span: 20 }}
             initialValues={{ remember: true }}
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
@@ -63,21 +63,21 @@ function ContactForm() {
             form={contactForm}
           >
             <Row>
-              <Col lg={{ span: 10, offset: 2 }} md={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }}>
-                <Form.Item label="Firstname" name="firstname" rules={[{ required: false, message: "Please input your firstname!" }]}>
-                  <Input placeholder="Jane" />
+              <Col lg={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
+                <Form.Item label="First name" name="firstname" rules={[{ required: false, message: "Please input your firstname!" }]}>
+                  <Input placeholder="Jane" style={{ backgroundColor: "#f1f1f1", border: "none" }} />
                 </Form.Item>
               </Col>
-              <Col lg={{ span: 10 }} md={{ span: 12 }} xs={{ span: 12 }}>
-                <Form.Item label="Lastname" name="lastname" rules={[{ required: false, message: "Please input your lastname!" }]}>
-                  <Input placeholder="Smith" />
+              <Col lg={{ span: 10 }} md={{ span: 10 }} xs={{ span: 10, offset: 2 }}>
+                <Form.Item label="Last name" name="lastname" rules={[{ required: false, message: "Please input your lastname!" }]}>
+                  <Input placeholder="Smith" style={{ backgroundColor: "#f1f1f1", border: "none" }} />
                 </Form.Item>
               </Col>
             </Row>
             <Row>
-              <Col lg={{ span: 24, offset: 0 }} md={{ span: 24, offset: 0 }} xs={{ span: 24, offset: 0 }}>
+              <Col lg={{ span: 22, offset: 1 }} md={{ span: 22, offset: 1 }} xs={{ span: 22, offset: 1 }}>
                 <Form.Item
-                  label="Mail Adress"
+                  label="Email Address"
                   name="mail"
                   rules={[
                     {
@@ -87,21 +87,21 @@ function ContactForm() {
                     { required: false, message: "Please input your mail adress" },
                   ]}
                 >
-                  <Input placeholder="janesmith@example.com" />
+                  <Input placeholder="janesmith@example.com" style={{ backgroundColor: "#f1f1f1", border: "none" }} />
                 </Form.Item>
               </Col>
             </Row>
 
             <Row>
-              <Col lg={{ span: 24, offset: 0 }} md={{ span: 24, offset: 0 }} xs={{ span: 24, offset: 0 }}>
+              <Col lg={{ span: 22, offset: 1 }} md={{ span: 22, offset: 1 }} xs={{ span: 22, offset: 1 }}>
                 <Form.Item label="Message" name="message" rules={[{ required: false, message: "Please input your message" }]}>
-                  <TextArea placeholder="Hey, ..." />
+                  <TextArea placeholder="Hey, ..." style={{ backgroundColor: "#f1f1f1", border: "none" }} />
                 </Form.Item>
               </Col>
             </Row>
 
-            <Form.Item wrapperCol={{ offset: 2, span: 20 }}>
-              <Button type="primary" htmlType="submit">
+            <Form.Item wrapperCol={{ offset: 0, span: 24 }}>
+              <Button type="primary" htmlType="submit" style={{ height: "40px", width: "180px" }}>
                 <ArrowRightOutlined />
                 Lorem Ipsum
               </Button>

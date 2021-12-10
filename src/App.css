@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 } */
+.IconScrollTop {
+  background-color: transparent;
+}
+
+.IconScrollTop button {
+  background-color: transparent;
+  border: none;
+}

@@ -6,7 +6,7 @@ body {
 }
 html {
   max-width: 100%;
-  overflow-x: hidden;
+  scroll-behavior: smooth !important;
 }
 p {
   font-family: Sen !important;
@@ -45,4 +45,18 @@ h6 {
   background: #162d8c;
   border: none;
   color: white;
+}
+.facebook:hover {
+  color: #3b5998;
+}
+.twitter:hover {
+  color: #1da1f2;
+}
+.instagram:hover {
+  color: #c32aa3;
+}
+.IconScrollTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }

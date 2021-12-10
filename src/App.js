@@ -1,4 +1,5 @@
 import { Layout, Row, Col } from "antd";
+import { useState, useEffect } from "react";
 import ColumnLeft from "./components/header/columnLeft";
 import ColumnRight from "./components/header/columnRight";
 import MenuMobile from "./components/header/menuMobile";
@@ -7,10 +8,29 @@ import ContactForm from "./components/content/contactForm";
 import Newsletter from "./components/footer/newsletter";
 import FooterMenu from "./components/footer/footerMenu";
 import Copyright from "./components/footer/copyright";
+import IconScrollTop from "./assets/icons/IconScrollTop.svg";
+import "./App.css";
+import { UpCircleFilled } from "@ant-design/icons";
 
 const { Header, Footer, Content } = Layout;
 
 function App() {
+  const [showButton, setShowButton] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 500) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
+  // This function will scroll the window to the top
+  const scrollToTop = () => {
+    window.scroll(0, 0);
+  };
   return (
     <>
       <Layout>
@@ -74,6 +94,13 @@ function App() {
               <Copyright></Copyright>
             </Col>
           </Row>
+          {showButton ? (
+            <div className="IconScrollTop">
+              <button onClick={scrollToTop}>
+                <UpCircleFilled style={{ color: "#007eea", fontSize: "50px" }} />
+              </button>
+            </div>
+          ) : null}
         </Footer>
       </Layout>
     </>

@@ -1,11 +1,34 @@
 import React from "react";
 import { useState } from "react";
 import logo from "../../assets/logo/logo-licorn.svg";
-import { notification, Form, Input } from "antd";
+import IconScrollTop from "../../assets/icons/IconScrollTop.svg";
+import { notification, Form, Input, Button } from "antd";
 import { FacebookFilled, TwitterOutlined, InstagramOutlined } from "@ant-design/icons";
+import "./newsletter.css";
 
 function Newsletter() {
   const [mail, setMail] = useState();
+  const [visible, setVisible] = useState(false);
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setVisible(true);
+    } else if (scrolled <= 300) {
+      setVisible(false);
+    }
+  };
+
+  window.addEventListener("scroll", toggleVisible);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
+  };
 
   const openNotificationWithIcon = (type, mail) => {
     notification[type]({
@@ -53,13 +76,13 @@ function Newsletter() {
       </Form>
       <br></br>
       <a style={{ color: "white" }} href="https://www.facebook.com">
-        <FacebookFilled style={{ margin: "5px" }} />
+        <FacebookFilled className="facebook" style={{ margin: "5px" }} />
       </a>
       <a style={{ color: "white" }} href="https://www.twitter.com">
-        <TwitterOutlined style={{ margin: "5px" }} />
+        <TwitterOutlined className="twitter" style={{ margin: "5px" }} />
       </a>
       <a style={{ color: "white" }} href="https://www.instagram.com">
-        <InstagramOutlined style={{ margin: "5px" }} />
+        <InstagramOutlined className="instagram" style={{ margin: "5px" }} />
       </a>
       <br />
       <br />
