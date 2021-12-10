@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/test-licorn-publishing/static/css/main.dbf483ad.chunk.css",
-    "main.js": "/test-licorn-publishing/static/js/main.8ab1ca31.chunk.js",
-    "main.js.map": "/test-licorn-publishing/static/js/main.8ab1ca31.chunk.js.map",
+    "main.js": "/test-licorn-publishing/static/js/main.26d26053.chunk.js",
+    "main.js.map": "/test-licorn-publishing/static/js/main.26d26053.chunk.js.map",
     "runtime-main.js": "/test-licorn-publishing/static/js/runtime-main.9843159a.js",
     "runtime-main.js.map": "/test-licorn-publishing/static/js/runtime-main.9843159a.js.map",
     "static/css/2.0ce74623.chunk.css": "/test-licorn-publishing/static/css/2.0ce74623.chunk.css",
-    "static/js/2.d281ac9b.chunk.js": "/test-licorn-publishing/static/js/2.d281ac9b.chunk.js",
-    "static/js/2.d281ac9b.chunk.js.map": "/test-licorn-publishing/static/js/2.d281ac9b.chunk.js.map",
+    "static/js/2.0951b64a.chunk.js": "/test-licorn-publishing/static/js/2.0951b64a.chunk.js",
+    "static/js/2.0951b64a.chunk.js.map": "/test-licorn-publishing/static/js/2.0951b64a.chunk.js.map",
     "static/js/3.cb0a1a2b.chunk.js": "/test-licorn-publishing/static/js/3.cb0a1a2b.chunk.js",
     "static/js/3.cb0a1a2b.chunk.js.map": "/test-licorn-publishing/static/js/3.cb0a1a2b.chunk.js.map",
     "index.html": "/test-licorn-publishing/index.html",
     "static/css/2.0ce74623.chunk.css.map": "/test-licorn-publishing/static/css/2.0ce74623.chunk.css.map",
     "static/css/main.dbf483ad.chunk.css.map": "/test-licorn-publishing/static/css/main.dbf483ad.chunk.css.map",
-    "static/js/2.d281ac9b.chunk.js.LICENSE.txt": "/test-licorn-publishing/static/js/2.d281ac9b.chunk.js.LICENSE.txt",
+    "static/js/2.0951b64a.chunk.js.LICENSE.txt": "/test-licorn-publishing/static/js/2.0951b64a.chunk.js.LICENSE.txt",
     "static/media/IconArrowDown.e9476045.svg": "/test-licorn-publishing/static/media/IconArrowDown.e9476045.svg",
     "static/media/IconArrowDown2.81690e17.svg": "/test-licorn-publishing/static/media/IconArrowDown2.81690e17.svg",
     "static/media/IconBrain.776e3393.svg": "/test-licorn-publishing/static/media/IconBrain.776e3393.svg",
@@ -40,8 +40,8 @@
   "entrypoints": [
     "static/js/runtime-main.9843159a.js",
     "static/css/2.0ce74623.chunk.css",
-    "static/js/2.d281ac9b.chunk.js",
+    "static/js/2.0951b64a.chunk.js",
     "static/css/main.dbf483ad.chunk.css",
-    "static/js/main.8ab1ca31.chunk.js"
+    "static/js/main.26d26053.chunk.js"
   ]
 }
