@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/test-licorn-publishing/static/css/main.13a97ca5.chunk.css",
-    "main.js": "/test-licorn-publishing/static/js/main.41f78899.chunk.js",
-    "main.js.map": "/test-licorn-publishing/static/js/main.41f78899.chunk.js.map",
-    "runtime-main.js": "/test-licorn-publishing/static/js/runtime-main.deebe155.js",
-    "runtime-main.js.map": "/test-licorn-publishing/static/js/runtime-main.deebe155.js.map",
+    "main.css": "/test-licorn-publishing/static/css/main.dbf483ad.chunk.css",
+    "main.js": "/test-licorn-publishing/static/js/main.8ab1ca31.chunk.js",
+    "main.js.map": "/test-licorn-publishing/static/js/main.8ab1ca31.chunk.js.map",
+    "runtime-main.js": "/test-licorn-publishing/static/js/runtime-main.9843159a.js",
+    "runtime-main.js.map": "/test-licorn-publishing/static/js/runtime-main.9843159a.js.map",
     "static/css/2.0ce74623.chunk.css": "/test-licorn-publishing/static/css/2.0ce74623.chunk.css",
-    "static/js/2.ae5dc907.chunk.js": "/test-licorn-publishing/static/js/2.ae5dc907.chunk.js",
-    "static/js/2.ae5dc907.chunk.js.map": "/test-licorn-publishing/static/js/2.ae5dc907.chunk.js.map",
-    "static/js/3.254a9079.chunk.js": "/test-licorn-publishing/static/js/3.254a9079.chunk.js",
-    "static/js/3.254a9079.chunk.js.map": "/test-licorn-publishing/static/js/3.254a9079.chunk.js.map",
+    "static/js/2.d281ac9b.chunk.js": "/test-licorn-publishing/static/js/2.d281ac9b.chunk.js",
+    "static/js/2.d281ac9b.chunk.js.map": "/test-licorn-publishing/static/js/2.d281ac9b.chunk.js.map",
+    "static/js/3.cb0a1a2b.chunk.js": "/test-licorn-publishing/static/js/3.cb0a1a2b.chunk.js",
+    "static/js/3.cb0a1a2b.chunk.js.map": "/test-licorn-publishing/static/js/3.cb0a1a2b.chunk.js.map",
     "index.html": "/test-licorn-publishing/index.html",
     "static/css/2.0ce74623.chunk.css.map": "/test-licorn-publishing/static/css/2.0ce74623.chunk.css.map",
-    "static/css/main.13a97ca5.chunk.css.map": "/test-licorn-publishing/static/css/main.13a97ca5.chunk.css.map",
-    "static/js/2.ae5dc907.chunk.js.LICENSE.txt": "/test-licorn-publishing/static/js/2.ae5dc907.chunk.js.LICENSE.txt",
+    "static/css/main.dbf483ad.chunk.css.map": "/test-licorn-publishing/static/css/main.dbf483ad.chunk.css.map",
+    "static/js/2.d281ac9b.chunk.js.LICENSE.txt": "/test-licorn-publishing/static/js/2.d281ac9b.chunk.js.LICENSE.txt",
     "static/media/IconArrowDown.e9476045.svg": "/test-licorn-publishing/static/media/IconArrowDown.e9476045.svg",
     "static/media/IconArrowDown2.81690e17.svg": "/test-licorn-publishing/static/media/IconArrowDown2.81690e17.svg",
     "static/media/IconBrain.776e3393.svg": "/test-licorn-publishing/static/media/IconBrain.776e3393.svg",
@@ -38,10 +38,10 @@
     "static/media/points-3x3.aebe4616.svg": "/test-licorn-publishing/static/media/points-3x3.aebe4616.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.deebe155.js",
+    "static/js/runtime-main.9843159a.js",
     "static/css/2.0ce74623.chunk.css",
-    "static/js/2.ae5dc907.chunk.js",
-    "static/css/main.13a97ca5.chunk.css",
-    "static/js/main.41f78899.chunk.js"
+    "static/js/2.d281ac9b.chunk.js",
+    "static/css/main.dbf483ad.chunk.css",
+    "static/js/main.8ab1ca31.chunk.js"
   ]
 }
