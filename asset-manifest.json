@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/test-licorn-publishing/static/css/main.8cc0ebfc.chunk.css",
-    "main.js": "/test-licorn-publishing/static/js/main.b4884953.chunk.js",
-    "main.js.map": "/test-licorn-publishing/static/js/main.b4884953.chunk.js.map",
+    "main.js": "/test-licorn-publishing/static/js/main.088c9130.chunk.js",
+    "main.js.map": "/test-licorn-publishing/static/js/main.088c9130.chunk.js.map",
     "runtime-main.js": "/test-licorn-publishing/static/js/runtime-main.c1db7195.js",
     "runtime-main.js.map": "/test-licorn-publishing/static/js/runtime-main.c1db7195.js.map",
     "static/css/2.0ce74623.chunk.css": "/test-licorn-publishing/static/css/2.0ce74623.chunk.css",
@@ -43,6 +43,6 @@
     "static/css/2.0ce74623.chunk.css",
     "static/js/2.f3dac7da.chunk.js",
     "static/css/main.8cc0ebfc.chunk.css",
-    "static/js/main.b4884953.chunk.js"
+    "static/js/main.088c9130.chunk.js"
   ]
 }
