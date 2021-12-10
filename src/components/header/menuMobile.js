@@ -11,7 +11,10 @@ function MenuMobile() {
   return (
     <div className="MenuMobile">
       <Menu mode="horizontal">
-        <Menu.Item key="1">LOREM</Menu.Item>
+        <Menu.Item key="1">
+          {" "}
+          <img src={Logo} alt="logo-licorn" style={{ padding: "20px" }} />
+        </Menu.Item>
         <Menu.Item key="2">LOREM</Menu.Item>
         <Menu.Item key="3">LOREM</Menu.Item>
         <Menu.Item key="4">LOREM</Menu.Item>
