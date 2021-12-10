@@ -3,13 +3,13 @@ import { Row, Col } from "antd";
 import "./cardtype2.css";
 import { ArrowRightOutlined } from "@ant-design/icons";
 
-const CardType1 = (props) => {
+const CardType2 = (props) => {
   const iconColorBackground = props.color || "#FA0E5A";
   const description = props.description;
   const iconSVG = props.icon;
   const image = props.image;
   return (
-    <div className="cardtype2">
+    <div className="CardType2">
       <Row align="middle">
         <Col style={{ backgroundColor: iconColorBackground, padding: "20px 10px 20px 10px" }} span={6}>
           <img src={iconSVG} alt="img" style={{ width: "50%" }} />
@@ -31,11 +31,7 @@ const CardType1 = (props) => {
         </Col>
       </Row>
       <Row align="middle">
-        <Col
-          offset={2}
-          span={20}
-          style={{ textAlign: "left", minHeight: "100px", padding: "20px 5px 20px 5px", fontFamily: "Sen-Bold" }}
-        >
+        <Col offset={2} span={20} style={{ textAlign: "left", minHeight: "100px", padding: "20px 5px 20px 5px", fontFamily: "Sen-Bold" }}>
           {description}
         </Col>
       </Row>
@@ -43,4 +39,4 @@ const CardType1 = (props) => {
   );
 };
 
-export default CardType1;
+export default CardType2;

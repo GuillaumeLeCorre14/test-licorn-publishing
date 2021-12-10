@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { Row, Col, Button } from "antd";
 import "./articles.css";
 import CardType1 from "./cardType1";
@@ -15,6 +16,11 @@ import ImageTablet from "../../../assets/photos/photoTablet-cardtype1-res.png";
 import Points3x3 from "../../../assets/icons/points-3x3.svg";
 
 function Articles() {
+  const [viewMore, setViewMore] = useState(false);
+
+  const changeViewMore = () => {
+    setViewMore(!viewMore);
+  };
   return (
     <>
       <div className="articles">
@@ -34,12 +40,8 @@ function Articles() {
                 md={{ span: 10, offset: 0 }}
                 xs={{ span: 24, offset: 0 }}
               >
-                <h1 style={{ textAlign: "left", fontSize: "40px", padding: "0px 0px 0px 40px", margin: "0px" }}>
-                  Lorem ipsum
-                </h1>
-                <h1 style={{ textAlign: "left", fontSize: "40px", padding: "0px 0px 0px 40px", margin: "0px" }}>
-                  dolor sit amet
-                </h1>
+                <h1 style={{ textAlign: "left", fontSize: "40px", padding: "0px 0px 0px 40px", margin: "0px" }}>Lorem ipsum</h1>
+                <h1 style={{ textAlign: "left", fontSize: "40px", padding: "0px 0px 0px 40px", margin: "0px" }}>dolor sit amet</h1>
               </Col>
             </Row>
           </Col>
@@ -141,15 +143,65 @@ function Articles() {
                 md={{ span: 7, offset: 0 }}
                 xs={{ span: 24, offset: 0 }}
               >
-                <CardType2
-                  color="#FA0E5A"
-                  description="Lorem ipsum dolor sit amet "
-                  icon={BrainSVG}
-                  image={ImgMother}
-                />
+                <CardType2 color="#FA0E5A" description="Lorem ipsum dolor sit amet " icon={BrainSVG} image={ImgMother} />
               </Col>
             </Row>
           </Col>
+          {viewMore ? (
+            <Row>
+              <Col lg={{ span: 18, offset: 3 }} md={{ span: 20, offset: 2 }} xs={{ span: 22, offset: 1 }}>
+                <Row>
+                  {/* Première Card de la ligne 1*/}
+                  <Col
+                    className="col1"
+                    style={{ minHeight: "200px", padding: "5px" }}
+                    lg={{ span: 10, offset: 0 }}
+                    md={{ span: 10, offset: 0 }}
+                    xs={{ span: 24, offset: 0 }}
+                  >
+                    <CardType1
+                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                      image={ImageTension}
+                      title="Lorem Ipsum"
+                      iconColorBackground="#007eea"
+                      icon={HandSVG}
+                      articleheader="true"
+                    />
+                  </Col>
+                  {/* Deuxieme Card de la ligne 1*/}
+                  <Col
+                    className="col2"
+                    style={{ top: "-60px", padding: "5px" }}
+                    lg={{ span: 7, offset: 0 }}
+                    md={{ span: 7, offset: 0 }}
+                    xs={{ span: 24, offset: 0 }}
+                  >
+                    <CardType2
+                      color="#FA0E5A"
+                      description="Lorem ipsum dolor sit amet eos quis fuga qui accusamus aperiam non earum repudiandae"
+                      icon={BrainSVG}
+                      image={ImgKid}
+                    />
+                  </Col>
+                  {/* Troisième Card de la ligne 1*/}
+                  <Col
+                    className="col3"
+                    style={{ top: "-30px", padding: "5px" }}
+                    lg={{ span: 7, offset: 0 }}
+                    md={{ span: 7, offset: 0 }}
+                    xs={{ span: 24, offset: 0 }}
+                  >
+                    <CardType2
+                      color="#0073A6"
+                      description="Lorem ipsum dolor sit amet eos quis fuga qui accusamus aperiam"
+                      icon={ImpactSVG}
+                      image={ImgWheelchair}
+                    />
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          ) : null}
         </Row>
         <div className="space-mobile">
           <br />
@@ -168,8 +220,9 @@ function Articles() {
                 fontFamily: "Sen",
                 borderRadius: "0px",
               }}
+              onClick={() => changeViewMore()}
             >
-              View More
+              {viewMore ? "View Less" : "View More"}
             </Button>
           </Col>
         </Row>

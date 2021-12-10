@@ -6,23 +6,23 @@ function FooterMenu() {
     <div className="footerMenu">
       <ul className="nopadding" style={{ listStyleType: "none" }}>
         <li>
-          <a href="#">LOREM</a>
+          <a href="/">LOREM</a>
         </li>
         <span className="pointsymbol">•</span>
         <li>
-          <a href="#">LOREM</a>
+          <a href="/">LOREM</a>
         </li>
         <span className="pointsymbol">•</span>
         <li>
-          <a href="#">LOREM</a>
+          <a href="/">LOREM</a>
         </li>
         <span className="pointsymbol">•</span>
         <li>
-          <a href="#">LOREM</a>
+          <a href="/">LOREM</a>
         </li>
         <span className="pointsymbol">•</span>
         <li>
-          <a href="#">LOREM</a>
+          <a href="/">LOREM</a>
         </li>
       </ul>
     </div>

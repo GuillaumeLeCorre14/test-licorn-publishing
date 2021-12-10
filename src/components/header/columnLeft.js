@@ -13,12 +13,11 @@ function ColumnLeft() {
       <Row>
         <Col lg={{ span: 24, offset: 0 }}>
           {/* Menu => 4 colonnes */}
-          <Row
-            className="MenuLeftDesktop"
-            style={{ backgroundColor: "#162d8c", fontSize: "14px", padding: "0% 0% 0% 0% ", textAlign: "center" }}
-          >
+          <Row className="MenuLeftDesktop" style={{ backgroundColor: "#162d8c", fontSize: "14px", padding: "0% 0% 0% 0% ", textAlign: "center" }}>
             <Col className="tab" offset={0} span={6}>
-              <img src={Logo} alt="logo-licorn" />
+              <a href="/">
+                <img src={Logo} alt="logo-licorn" />
+              </a>
             </Col>
             <Col className="tab" offset={0} span={6}>
               <img src={IconFlower} alt="logo-licorn" />
@@ -42,20 +41,9 @@ function ColumnLeft() {
           <Row style={{ backgroundColor: "#162d8c", paddingBottom: "12%", paddingTop: "12%" }}>
             <Col offset={0} span={24}>
               <div className="SliderLeft">
-                <h1 style={{ color: "white", fontSize: "60px", lineHeight: "74px" }}>Loremp ipsum dolor sit amet</h1>
-                <p style={{ color: "white", fontSize: "25px", lineHeight: "32px" }}>
-                  Eos quis fuga qui accusamus aperiam non earum repudiandae
-                </p>
-                <Button
-                  style={{
-                    color: "white",
-                    backgroundColor: "#007EEA",
-                    border: "0px",
-                    borderRadius: "0px",
-                    height: "50px",
-                    width: "150px",
-                  }}
-                >
+                <h1 style={{ color: "white", fontSize: "60px", lineHeight: "74px" }}>Lorem ipsum dolor sit amet</h1>
+                <p style={{ color: "white", fontSize: "25px", lineHeight: "32px" }}>Eos quis fuga qui accusamus aperiam non earum repudiandae</p>
+                <Button className="CTA-Homepage">
                   <a href="/">Lorem ipsum</a>
                 </Button>
                 <Row>
@@ -75,9 +63,18 @@ function ColumnLeft() {
               <center>
                 <p style={{ fontSize: "15px", letterSpacing: "1.76", color: "#353535", fontWeight: "bold" }}>
                   FOLLOW US
-                  <FacebookFilled style={{ margin: "5px 5px 5px 35px " }} />
+                  {/* <FacebookFilled style={{ margin: "5px 5px 5px 35px " }} />
                   <TwitterOutlined style={{ margin: "5px" }} />
-                  <InstagramOutlined style={{ margin: "5px" }} />
+                  <InstagramOutlined style={{ margin: "5px" }} /> */}
+                  <a style={{ color: "black" }} href="https://www.facebook.com">
+                    <FacebookFilled style={{ margin: "5px 5px 5px 35px " }} />
+                  </a>
+                  <a style={{ color: "black" }} href="https://www.twitter.com">
+                    <TwitterOutlined style={{ margin: "5px" }} />
+                  </a>
+                  <a style={{ color: "black" }} href="https://www.instagram.com">
+                    <InstagramOutlined style={{ margin: "5px" }} />
+                  </a>
                 </p>
               </center>
             </Col>

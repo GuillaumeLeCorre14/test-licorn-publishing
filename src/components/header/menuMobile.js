@@ -1,11 +1,7 @@
 import React from "react";
-import { Menu, Row, Col, Button } from "antd";
+import { Menu } from "antd";
 import Logo from "../../assets/logo/logo-licorn.svg";
-import IconFlower from "../../assets/icons/IconFlower.svg";
-import IconHeart from "../../assets/icons/IconHeart.svg";
-import IconFile from "../../assets/icons/IconFile.svg";
 import "./columnLeft.css";
-import { FacebookFilled, TwitterOutlined, InstagramOutlined } from "@ant-design/icons";
 
 function MenuMobile() {
   return (

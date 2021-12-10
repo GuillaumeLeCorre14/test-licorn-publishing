@@ -18,3 +18,20 @@
     display: none;
   }
 }
+.CTA-Homepage {
+  color: white;
+  background-color: #007eea;
+  border: 0px;
+  border-radius: 0px;
+  height: 50px;
+  width: 150px;
+}
+.CTA-Homepage:hover {
+  color: #162d8c;
+  background-color: white;
+  border: 0px;
+  border-radius: 0px;
+  border: 2px solid white;
+  height: 50px;
+  width: 150px;
+}

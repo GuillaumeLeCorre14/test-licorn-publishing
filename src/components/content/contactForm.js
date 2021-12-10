@@ -1,13 +1,22 @@
 import React from "react";
-import { Row, Col, Form, Input, Button } from "antd";
+import { notification, Row, Col, Form, Input, Button } from "antd";
 import ContactImage from "../../assets/photos/photo-contact.png";
 import "./contactForm.css";
 import { ArrowRightOutlined } from "@ant-design/icons";
 const { TextArea } = Input;
 
 function ContactForm() {
+  const openNotificationWithIcon = (type) => {
+    notification[type]({
+      message: "Message envoyé avec succès",
+      placement: "bottomRight",
+      description: "Nous vous répondrons dans les meilleurs délais.",
+      duration: 3,
+    });
+  };
+
   const onFinish = (values) => {
-    console.log("Success:", values);
+    openNotificationWithIcon("success");
   };
 
   const onFinishFailed = (errorInfo) => {
@@ -51,31 +60,19 @@ function ContactForm() {
           >
             <Row>
               <Col lg={{ span: 10, offset: 2 }} md={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }}>
-                <Form.Item
-                  label="Firstname"
-                  name="firstname"
-                  rules={[{ required: false, message: "Please input your firstname!" }]}
-                >
+                <Form.Item label="Firstname" name="firstname" rules={[{ required: false, message: "Please input your firstname!" }]}>
                   <Input placeholder="Jane" />
                 </Form.Item>
               </Col>
               <Col lg={{ span: 10 }} md={{ span: 12 }} xs={{ span: 12 }}>
-                <Form.Item
-                  label="Lastname"
-                  name="lastname"
-                  rules={[{ required: false, message: "Please input your lastname!" }]}
-                >
+                <Form.Item label="Lastname" name="lastname" rules={[{ required: false, message: "Please input your lastname!" }]}>
                   <Input placeholder="Smith" />
                 </Form.Item>
               </Col>
             </Row>
             <Row>
               <Col lg={{ span: 24, offset: 0 }} md={{ span: 24, offset: 0 }} xs={{ span: 24, offset: 0 }}>
-                <Form.Item
-                  label="Mail Adress"
-                  name="mail"
-                  rules={[{ required: false, message: "Please input your mail adress" }]}
-                >
+                <Form.Item label="Mail Adress" name="mail" rules={[{ required: false, message: "Please input your mail adress" }]}>
                   <Input placeholder="janesmith@example.com" />
                 </Form.Item>
               </Col>
@@ -83,11 +80,7 @@ function ContactForm() {
 
             <Row>
               <Col lg={{ span: 24, offset: 0 }} md={{ span: 24, offset: 0 }} xs={{ span: 24, offset: 0 }}>
-                <Form.Item
-                  label="Message"
-                  name="message"
-                  rules={[{ required: false, message: "Please input your message" }]}
-                >
+                <Form.Item label="Message" name="message" rules={[{ required: false, message: "Please input your message" }]}>
                   <TextArea placeholder="Hey, ..." />
                 </Form.Item>
               </Col>
