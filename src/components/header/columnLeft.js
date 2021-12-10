@@ -10,10 +10,13 @@ import { FacebookFilled, TwitterOutlined, InstagramOutlined } from "@ant-design/
 function ColumnLeft() {
   return (
     <div className="ColumnLeft">
-      <Row className="MenuLeft" style={{ backgroundColor: "#162d8c" }}>
-        <Col offset={0} span={24}>
+      <Row>
+        <Col lg={{ span: 24, offset: 0 }}>
           {/* Menu => 4 colonnes */}
-          <Row style={{ fontSize: "14px", padding: "0% 0% 0% 0% ", textAlign: "center" }}>
+          <Row
+            className="MenuLeftDesktop"
+            style={{ backgroundColor: "#162d8c", fontSize: "14px", padding: "0% 0% 0% 0% ", textAlign: "center" }}
+          >
             <Col className="tab" offset={0} span={6}>
               <img src={Logo} alt="logo-licorn" />
             </Col>

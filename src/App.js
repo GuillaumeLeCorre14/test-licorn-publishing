@@ -1,6 +1,7 @@
 import { Layout, Row, Col } from "antd";
 import ColumnLeft from "./components/header/columnLeft";
 import ColumnRight from "./components/header/columnRight";
+import MenuMobile from "./components/header/menuMobile";
 import Articles from "./components/content/articles/articles";
 import ContactForm from "./components/content/contactForm";
 import Newsletter from "./components/footer/newsletter";
@@ -14,6 +15,9 @@ function App() {
     <>
       <Layout>
         <Header>
+          <div className="MenuMobile">
+            <MenuMobile />
+          </div>
           <Row>
             <Col xs={{ span: 24, offset: 0 }} lg={{ span: 12, offset: 0 }}>
               <ColumnLeft />

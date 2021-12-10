@@ -36,3 +36,13 @@ h6 {
   padding: 0px !important;
   height: auto !important;
 }
+@media screen and (min-width: 992px) {
+  .MenuMobile {
+    display: none;
+  }
+}
+.MenuMobile .ant-menu {
+  background: #162d8c;
+  border: none;
+  color: white;
+}
