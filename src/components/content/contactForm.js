@@ -6,6 +6,8 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 const { TextArea } = Input;
 
 function ContactForm() {
+  const [contactForm] = Form.useForm();
+
   const openNotificationWithIcon = (type) => {
     notification[type]({
       message: "Message envoyé avec succès",
@@ -17,6 +19,7 @@ function ContactForm() {
 
   const onFinish = (values) => {
     openNotificationWithIcon("success");
+    contactForm.resetFields();
   };
 
   const onFinishFailed = (errorInfo) => {
@@ -57,6 +60,7 @@ function ContactForm() {
             onFinishFailed={onFinishFailed}
             autoComplete="off"
             layout="vertical"
+            form={contactForm}
           >
             <Row>
               <Col lg={{ span: 10, offset: 2 }} md={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }}>
@@ -72,7 +76,17 @@ function ContactForm() {
             </Row>
             <Row>
               <Col lg={{ span: 24, offset: 0 }} md={{ span: 24, offset: 0 }} xs={{ span: 24, offset: 0 }}>
-                <Form.Item label="Mail Adress" name="mail" rules={[{ required: false, message: "Please input your mail adress" }]}>
+                <Form.Item
+                  label="Mail Adress"
+                  name="mail"
+                  rules={[
+                    {
+                      type: "email",
+                      message: "This is not valid E-mail!",
+                    },
+                    { required: false, message: "Please input your mail adress" },
+                  ]}
+                >
                   <Input placeholder="janesmith@example.com" />
                 </Form.Item>
               </Col>
