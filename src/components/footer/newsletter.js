@@ -54,7 +54,7 @@ function Newsletter() {
       <h1 style={{ fontSize: "53px", color: "white", margin: "0px" }}>Newsletter</h1>
       <Form onFinish={onFinish}>
         <Input
-          placeholder="MAIL ADDRESS"
+          placeholder="EMAIL ADDRESS"
           style={{
             margin: "0px",
             color: "rgba(255,255,255, 0.8)",
